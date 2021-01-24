@@ -166,49 +166,104 @@
 // });
 // это был пример вызова функции, как аргумента от другой функции
 
-function learnJS (lang, callback) {
-    console.log ("я учу  " + lang);
-    callback ();  
-};
+// function learnJS (lang, callback) {
+//     console.log ("я учу  " + lang);
+//     callback ();  
+// };
 
-function done () {
-    console.log(1);
-};
+// function done () {
+//     console.log(1);
+// };
 
 
-learnJS ("JavaScript", done);
+// learnJS ("JavaScript", done);
 
 
 
                                                 //   Объекты
 
-let options = {
-    width: 1024,
-    height: 1023,
-    name: 'test'
-};
+// let options = {
+//     width: 1024,
+//     height: 1023,
+//     name: 'test'
+// };
 
-console.log (options.height); 
+// console.log (options.height); 
 // вывел значение свойства height из объекта
 
-options.bool = false;
+// options.bool = false;
 // добавил свойство bool со знчением false в объект
 
-options.colors = {
-    color1: 'red',
-    color2: 'white',
-    color3: 'green'
-};
+// options.colors = {
+//     color1: 'red',
+//     color2: 'white',
+//     color3: 'green'
+// };
 // добавил  объект colors в имеющийся объект options
 
-delete options.name;
+// delete options.name;
 // удалили выбранное значение из объекта
 
-console.log(options);
+// console.log(options);
 
-for (let key in options) {
-    console.log ('propery ' + key + ' has a value ' + options[key]);
-}
+// for (let key in options) {
+//     console.log ('propery ' + key + ' has a value ' + options[key]);
+// }
 // с помощью задания такого цикла и переменной в нем "key" мы выводим все свойства из объекта по очереди
 
-console.log (Object.keys(options).length);
+// console.log (Object.keys(options).length);
+
+
+                                                //  Массивы
+
+
+
+// let arr  = [ 1, 2, 3, 4, 5];
+
+// arr.pop();  
+// удалил элемент с конца массива 
+
+
+// arr.push ("5");
+// добавил элемент в конец массива
+
+// arr.shift ();
+// удалил первый элемент  массива
+
+// arr.unshift ("1");
+// добавил первый элемент  массива
+
+// let arr  = [ 1, 2, 3, 4, 5];
+
+// for (let i = 0; i < arr.length; i++ ) {
+//     console.log(arr[i]);
+// };
+
+
+// let arr  = [ 1, 2, 3, 4, 5];
+// arr [99] = 99;
+// console.log(arr.length);
+// console.log (arr);
+
+
+
+// let arr  = [ 1, 2, 3, 4, 5];
+// arr.forEach(function(item, i, mass) {
+//     console.log(i + ": " + item + " (array: " + mass + ")");
+
+});
+// это способ перебора массивов
+
+let mass = [ 1, 3, 7, 5, 1];
+for (let key in mass) {
+    console.log (key);
+}
+// использовали цикл с оператором in как для объекта. в консоль вывели ключи какждого элемента массива. н-ер, для элемента 7 ключ = порядковый номер = 2
+
+// let mass = [ 1, 3, 7, 5, 1];
+// for (let key of mass) {
+//     console.log (key);
+// }
+// это самый новый способ перебора элементов в массиве
+
+
