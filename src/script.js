@@ -247,9 +247,9 @@
 
 
 
-// let arr  = [ 1, 2, 3, 4, 5];
-// arr.forEach(function(item, i, mass) {
-//     console.log(i + ": " + item + " (array: " + mass + ")");
+let arr  = [ 1, 2, 3, 4, 5];
+arr.forEach(function(item, i, mass) {
+    console.log(i + ": " + item + " (array: " + mass + ")");
 
 });
 // это способ перебора массивов
@@ -260,10 +260,59 @@ for (let key in mass) {
 }
 // использовали цикл с оператором in как для объекта. в консоль вывели ключи какждого элемента массива. н-ер, для элемента 7 ключ = порядковый номер = 2
 
-// let mass = [ 1, 3, 7, 5, 1];
-// for (let key of mass) {
-//     console.log (key);
-// }
+let mass = [ 1, 3, 7, 5, 1];
+for (let key of mass) {
+    console.log (key);
+}
 // это самый новый способ перебора элементов в массиве
 
+// let answer = prompt('', ''),
+//     arr = [];
 
+// arr = answer.split(',');
+// console.log(arr);    
+// ввели через промпт набор данных. а с помощью arr = answer.split(','); записали вмассив
+
+
+// let arr = ['jgkfjgk', 'mfgkfjk', 'fg;rgoprp[]'],
+//     i = arr.join(', ');
+
+//     console.log(i);   
+
+//     из массива вывели в переменную все элементы через запятую
+
+
+
+// let arr = ['jgkfjgk', 'mfgkfjk', 'fg;rgoprp[]'],
+//     i = arr.sort();
+
+//     console.log(arr);  
+//      отсортировали содержимое массива по алфавиту 
+
+// let arr = [1, 25, 18, 54, 6 ],
+//     i = arr.sort(compareNum);
+
+//     function compareNum (a,b) {
+//         return a-b;
+//     };
+    
+
+//     console.log(arr);  
+//     отсортировали элементы по возрастанию
+
+//                                         Объектно-ориентированное программирование
+
+// let soldier = {
+//     health:400,
+//     armour:250,
+//     heigh:180
+// };
+
+// let gohn = {
+//     health: 76
+// }
+
+// gohn.__proto__ = soldier;
+
+// console.log(gohn);
+// console.log (gohn.armour);
