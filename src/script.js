@@ -156,20 +156,20 @@
 // second ();
 
 
-// function learnJS (lang, callback) {
-//     console.log ("я учу  " + lang);
-//     callback ();
-// }
+function learnJS (lang, callback) {
+    console.log ("я учу  " + lang);
+    callback ();
+}
 
-// learnJS ("JavaScript", function() {
-//     console.log ('i have learned the third lesson');
-// });
-// это был пример вызова функции, как аргумента от другой функции
+learnJS ("JavaScript", function() {
+    console.log ('i have learned the third lesson');
+});
+это был пример вызова функции, как аргумента от другой функции
 
-// function learnJS (lang, callback) {
-//     console.log ("я учу  " + lang);
-//     callback ();  
-// };
+function learnJS (lang, callback) {
+    console.log ("я учу  " + lang);
+    callback ();  
+};
 
 // function done () {
 //     console.log(1);
