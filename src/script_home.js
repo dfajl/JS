@@ -97,10 +97,6 @@ for (let key in appData) {
 
 
 
-
-
-
-
 // let user = {
 //     name: 'john',
 //     age: 30,
