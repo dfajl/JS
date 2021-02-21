@@ -156,20 +156,20 @@
 // second ();
 
 
-function learnJS (lang, callback) {
-    console.log ("я учу  " + lang);
-    callback ();
-}
+// function learnJS (lang, callback) {
+//     console.log ("я учу  " + lang);
+//     callback ();
+// }
 
-learnJS ("JavaScript", function() {
-    console.log ('i have learned the third lesson');
-});
+// learnJS ("JavaScript", function() {
+//     console.log ('i have learned the third lesson');
+// });
 // это был пример вызова функции, как аргумента от другой функции
 
-function learnJS (lang, callback) {
-    console.log ("я учу  " + lang);
-    callback ();  
-};
+// function learnJS (lang, callback) {
+//     console.log ("я учу  " + lang);
+//     callback ();  
+// };
 
 // function done () {
 //     console.log(1);
@@ -247,23 +247,23 @@ function learnJS (lang, callback) {
 
 
 
-let arr  = [ 1, 2, 3, 4, 5];
-arr.forEach(function(item, i, mass) {
-    console.log(i + ": " + item + " (array: " + mass + ")");
+// let arr  = [ 1, 2, 3, 4, 5];
+// arr.forEach(function(item, i, mass) {
+//     console.log(i + ": " + item + " (array: " + mass + ")");
 
-});
+// });
 // это способ перебора массивов
 
-let mass = [ 1, 3, 7, 5, 1];
-for (let key in mass) {
-    console.log (key);
-}
+// let mass = [ 1, 3, 7, 5, 1];
+// for (let key in mass) {
+//     console.log (key);
+// }
 // использовали цикл с оператором in как для объекта. в консоль вывели ключи какждого элемента массива. н-ер, для элемента 7 ключ = порядковый номер = 2
 
-let mass = [ 1, 3, 7, 5, 1];
-for (let key of mass) {
-    console.log (key);
-}
+// let mass = [ 1, 3, 7, 5, 1];
+// for (let key of mass) {
+//     console.log (key);
+// }
 // это самый новый способ перебора элементов в массиве
 
 // let answer = prompt('', ''),
@@ -302,100 +302,188 @@ for (let key of mass) {
 
 //                                         Объектно-ориентированное программирование
 
-let soldier = {
-    health:400,
-    armour:250,
-    heigh:180
-};
+// let soldier = {
+//     health:400,
+//     armour:250,
+//     heigh:180
+// };
 
-let john = {
-    health: 76
-}
+// let john = {
+//     health: 76
+// }
 
-gohn.__proto__ = soldier;
+// gohn.__proto__ = soldier;
 
-console.log(john);
-console.log (john.armour);
+// console.log(john);
+// console.log (john.armour);
 
                                             // Задачи на понимание основ JavaScript
 
 
 
-console.log([] + false - null + true); 
+// console.log([] + false - null + true); 
 // ответ NaN
 // пустой массив - это строка. Если к строке прибавить что-то, то получим строку. Затем из строки вычитаем что-то - это не математическая операция, и если к  NaN прибавить true, то получим NaN
 
 // console.log(typeof(NaN));  number
 
-let y = 1; let x = y = 2; console.log(x);
+// let y = 1; let x = y = 2; console.log(x);
 // ответ 2
 // сначала читай код справа налево. т.е. предыдущее значение y = 1 заменяется выражением y = 2. Как будто код записан как обычно. в столбик
 
-console.log([] + 1 + 2); 
+// console.log([] + 1 + 2); 
 // ответ "12"
 // к пустому массиву = строке добавляем число, получаем строку, т.е."1" и к ней прибавляем  число 2, то получаем строку "12"
 
-console.log('1'[0]);
+// console.log('1'[0]);
 // ответ 1
 // строку мы можем разбить на отдельные сымволы. и вывысти из нее какой-либо через квадратные скобки. у массива точно так же
 
-console.log(1 && 2 && null && 0 && undefined);
+// console.log(1 && 2 && null && 0 && undefined);
 // ответ null
 //  "оператор -И- запинается на лжи". т.е. его задача вывести ложь и прекратить код
 
-console.log (2 || 0 );
+// console.log (2 || 0 );
 // выводит только правду
 // 2
 
-console.log (0 || 2 );
+// console.log (0 || 2 );
 // выводит только правду
 // 2
 
-console.log (3 || 2 ); 
+// console.log (3 || 2 ); 
 // просто выводит первую правду
 // 3
 
-console.log (0 || null);
+// console.log (0 || null);
 // null
 // так как тут две лжи, то он просто выводит последнюю ложь в паре
 
 
 
 
-console.log(null && 2 );
+// console.log(null && 2 );
 //выводит ложь
 //null
 
-console.log(2 && null );
+// console.log(2 && null );
 //выводит ложь
 //null
 
-console.log(0 && null );
+// console.log(0 && null );
 //выводит первую ложь
 //0
 
-console.log(2 && 6 );
+// console.log(2 && 6 );
 //6
 // так как тут две правды, то он просто выводит последнюю правду в паре
 
-console.log(null || 2 && 3 || 4);
+// console.log(null || 2 && 3 || 4);
 //3
 
-a = [1, 2, 3]; 
-b = [1, 2, 3];
+// a = [1, 2, 3]; 
+// b = [1, 2, 3];
 // ответ: между собой эти два массива не равны! это разные массивы
 
-console.log(+'Infinity');
-console.log(typeof(+'Infinity'));
+// console.log(+'Infinity');
+// console.log(typeof(+'Infinity'));
 
-console.log('ёжик' > 'яблоко');
+// console.log('ёжик' > 'яблоко');
 // ответ: true. это задача на знание Unicode. здесь идет посимвольное сравнение. в юникоде буква ё стоит после буквы я. поэтому выражение верно.
 
-console.log(0 || '' || 2 || undefined || true || false);
+// console.log(0 || '' || 2 || undefined || true || false);
 // 2
 // т.е. наш оператор "спотыкается" на первой правде. а это 2
 
+                                                // СОБЫТИЯ НА МОБ УСТРОЙСТВАХ
 
 
 
-  
+
+// window.addEventListener('DOMContentLoaded', function() {
+    // let box = document.getElementById('box');
+
+    // box.addEventListener('touchstart', function(e){
+        // e.preventDefault();
+
+        // console.log(e.target);
+
+        // console.log(e.touches[0].target);
+        // регистрация всех пальцев, которые прикоснулись к экрану
+
+        // console.log(e.changedTouches);
+        // аналогично предыдущему свойству объекта
+
+        // console.log(e.targetTouches);
+        // регистрация количества пальцев, которые прикоснулись к определенному элементу на экране
+    // });
+
+    // box.addEventListener('touchmove', function(e) {
+        // e.preventDefault();
+        // console.log('red box: ' + e.touches[0].pageX);
+    // });
+
+    // box.addEventListener('touchend', function(e){
+    //     e.preventDefault();
+    //     console.log('red box: touchend');
+    // });
+
+
+                                            
+// });
+
+                                        // РЕГУЛЯРНЫЕ ВЫРАЖЕНИЯ
+
+// регулярные выражения служат для того, чтобы удобно работать со строками
+ 
+// new RegExp ('pattern', 'flags');
+// /pattern/;
+
+// let ans = prompt('ввудите ваше имя');
+
+// let reg = /n/gi;
+// console.log(ans.search(reg));
+
+// flags: 
+// i - регистр;
+// g - глобальность (все рез-ты совпадений, а не только первое);
+// m - многострочность;
+
+// метод search() очень ограничен в применении. он ищет только первое вхождение
+// лучше использовать match();
+
+// console.log(ans.match(reg));
+
+
+// let pass = prompt ('enter a password');
+// console.log(pass.replace(/./g, '*'));
+// alert('12-34-56'.replace(/-/g, ':'));
+
+// let ans = prompt('введите ваше имя');
+
+// let reg = /n/gi;
+
+// console.log(reg.test(ans));
+
+
+                                                    // классы символов
+
+// \d -поис всех цифр       
+
+// \w - поиск всех слов
+
+// \s - все пробелы
+
+// \D -поис всех НЕцифр
+// \W -поис всех НЕбукв
+// \S -поис всех НЕпробелов
+
+// let ans = prompt('введи число');
+
+// let reg = /\d/g;
+
+// console.log(ans.match(reg));
+
+let str = 'my * name \ is R2D2';
+
+console.log(str.match(/\*/));
