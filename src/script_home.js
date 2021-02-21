@@ -23,7 +23,11 @@ let startBtn = document.getElementById("start"),
     dayValue = document.querySelector('.day-value');
 
 
-let money, time;                                                       
+let money, time;        
+
+expensesBtn.disabled = true;
+optionalExpensesBtn.disabled = true;
+countBtn.disabled = true;
 
 
 startBtn.addEventListener('click', function() {
@@ -32,14 +36,17 @@ startBtn.addEventListener('click', function() {
 
     while (isNaN(money) || money == '' || money == null ) {
         money = +prompt('Ваш бюджет на месяц?');
-
     }
+
     appData.budget = money;
     appData.timeData = time;
     budgetValue.textContent = money.toFixed();
     yearValue.value = new Date(Date.parse(time)).getFullYear();
     monthValue.value = new Date(Date.parse(time)).getMonth() + 1;
     dayValue.value = new Date(Date.parse(time)).getDate();
+    expensesBtn.disabled = false;
+    optionalExpensesBtn.disabled = false;
+    countBtn.disabled = false;
 });
 
 expensesBtn.addEventListener('click', function(){
@@ -74,7 +81,7 @@ optionalExpensesBtn.addEventListener('click', function() {
 countBtn.addEventListener('click', function() {
 
     if (appData.budget != undefined) {
-        appData.moneyPerDay = (appData.budget / 30).toFixed ();
+        appData.moneyPerDay = ((appData.budget -  +expensesValue.textContent)/ 30).toFixed ();
         dayBudgetValue.textContent = appData.moneyPerDay;
     
         if (appData.moneyPerDay < 100) {
